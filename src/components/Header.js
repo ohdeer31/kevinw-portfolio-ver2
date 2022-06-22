@@ -4,6 +4,8 @@ import Aboutme from "./pages/Aboutme";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import nintendo from "../images/nintendo-bg.jpeg";
+import "../font.css";
 
 export default function Header() {
   const [currentPage, setCurrentPage] = useState("Aboutme");
@@ -25,13 +27,29 @@ export default function Header() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="my-3">
-      <h1 className="d-inline p-2 m-1">Kevin Wang</h1>
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      {renderPage()}
+    <div>
+      <nav
+        className="navbar"
+        style={{ backgroundImage: `url(${nintendo})`, padding: "70px" }}
+      >
+        <h1
+          className="p-2 m-1 googleFont"
+          style={{ color: "white", fontSize: "40px" }}
+        >
+          Kevin Wang
+        </h1>
+        <Navigation
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      </nav>
+      <div
+        className="d-flex flex-column min-vh-100"
+        // style={{ backgroundImage: `url(${mario})`, color: "white" }}
+        // style={{ backgroundColor: "rgb(86,86,86)", color: "white" }}
+      >
+        {renderPage()}
+      </div>
     </div>
   );
 }

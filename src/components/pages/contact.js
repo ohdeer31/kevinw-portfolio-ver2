@@ -1,4 +1,5 @@
 import React from "react";
+import "../../font.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,16 +13,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App container">
+      <div className="App container googleFont">
         <header className="my-5">
-          <h1>Contact</h1>
+          <h1 className="googleFont">Contact</h1>
         </header>
         <form
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
           method="POST"
         >
-          <div className="form-group">
+          <div className="form-group m-3">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -30,7 +31,7 @@ class App extends React.Component {
               onChange={this.onNameChange.bind(this)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group m-3">
             <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               type="email"
@@ -40,7 +41,7 @@ class App extends React.Component {
               onChange={this.onEmailChange.bind(this)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group m-3">
             <label htmlFor="message">Message</label>
             <textarea
               className="form-control"
@@ -49,7 +50,7 @@ class App extends React.Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary m-3">
             Submit
           </button>
         </form>

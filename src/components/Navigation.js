@@ -1,9 +1,10 @@
 import React from "react";
+import "../font.css";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="d-inline">
-      <ul className="nav nav-tabs justify-content-end">
+      <ul className="nav googleFont" style={{ fontSize: "20px" }}>
         <li className="nav-item">
           <a
             href="#aboutme"
@@ -11,8 +12,9 @@ function NavTabs({ currentPage, handlePageChange }) {
             className={
               currentPage === "Aboutme" ? "nav-link active" : "nav-link"
             }
+            // style={{ color: "white" }}
           >
-            About me
+            About
           </a>
         </li>
         <li className="nav-item">
