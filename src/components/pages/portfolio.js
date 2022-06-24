@@ -42,7 +42,7 @@ export default function Portfolio() {
       </header>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map(({ name, image, tools, link }) => (
-          <div className="col">
+          <div className="col" key={name.toString()}>
             <div className="card">
               {/* <div
                 className="bg-image hover-zoom"

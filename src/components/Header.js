@@ -43,13 +43,7 @@ export default function Header() {
           handlePageChange={handlePageChange}
         />
       </nav>
-      <div
-        className="d-flex flex-column min-vh-100"
-        // style={{ backgroundImage: `url(${mario})`, color: "white" }}
-        // style={{ backgroundColor: "rgb(86,86,86)", color: "white" }}
-      >
-        {renderPage()}
-      </div>
+      <div className="d-flex flex-column min-vh-100">{renderPage()}</div>
     </div>
   );
 }
