@@ -22,7 +22,7 @@ export default function About() {
           as an inventory control supervisor. I was introducted to basic
           programs that were used to calculate numbers for monitoring products.
           Working there allowed me to realize working as a computer programmer
-          is more stuited to me.
+          is more suited to me.
         </p>
       </div>
     </div>

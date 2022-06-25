@@ -30,7 +30,7 @@ const projects = [
     name: "My Work Day Scheduler",
     image: "picture5.jpeg",
     tools: "JavaScript",
-    link: "",
+    link: "https://ohdeer31.github.io/my-work-day-scheduler/",
   },
 ];
 
