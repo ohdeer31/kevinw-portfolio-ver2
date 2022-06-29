@@ -17,12 +17,12 @@ export default function About() {
         <p className="my-3">
           Greetings. My name is Kevin Wang and I graduated from the University
           of California, Riverside with a bachelor degree in Business Economics.
-          After graduating in 2019, I moved to Japan and studied their language
-          and culture till 2021. I moved back to the states and started working
-          as an inventory control supervisor. I was introducted to basic
-          programs that were used to calculate numbers for monitoring products.
-          Working there allowed me to realize working as a computer programmer
-          is more suited to me.
+          I started working as an inventory control supervisor where I was
+          introducted to basic programs that were used to calculate numbers for
+          monitoring products. Working there allowed me to realize my interest
+          in working as a computer programmer. As a result, I started developing
+          new skills as a full-stack developer at University of California, San
+          Diego Extension Studies.
         </p>
       </div>
     </div>
