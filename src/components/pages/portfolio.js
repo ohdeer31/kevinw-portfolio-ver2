@@ -6,7 +6,7 @@ const projects = [
     name: "The Bowel Mvmt",
     image: "picture1.jpeg",
     tools: "JavaScript/React/MongoDB/GraphQL/Express.js",
-    link: "https://ancient-refuge-47910.herokuapp.com/",
+    link: "https://the-bowel-mvmt.herokuapp.com/",
   },
   {
     name: "Doggo Meet Up",
