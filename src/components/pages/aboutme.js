@@ -1,5 +1,6 @@
 import React from "react";
 import "../../font.css";
+import "../../style.css";
 import profilePic from "../../images/me.png";
 
 export default function About() {
@@ -9,16 +10,20 @@ export default function About() {
         <h1 className="googleFont">About Me</h1>
       </header>
       <div>
-        <img
-          src={profilePic}
-          alt="myself"
-          style={{ width: 150, height: 150 }}
-        ></img>
+        <div className="mePicture">
+          <figure>
+            <img
+              src={profilePic}
+              alt="myself"
+              style={{ width: 150, height: 150 }}
+            ></img>
+          </figure>
+        </div>
         <p className="my-3">
           Greetings. My name is Kevin Wang and I graduated from the University
           of California, Riverside with a bachelor degree in Business Economics.
           I started working as an inventory control supervisor where I was
-          introducted to basic programs that were used to calculate numbers for
+          introduced to basic programs that were used to calculate numbers for
           monitoring products. Working there allowed me to realize my interest
           in working as a computer programmer. As a result, I started developing
           new skills as a full-stack developer at University of California, San

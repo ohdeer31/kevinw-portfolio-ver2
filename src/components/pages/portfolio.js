@@ -1,5 +1,6 @@
 import React from "react";
 import "../../font.css";
+import "../../style.css";
 
 const projects = [
   {
@@ -43,22 +44,13 @@ export default function Portfolio() {
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map(({ name, image, tools, link }) => (
           <div className="col" key={name.toString()}>
-            <div className="card">
-              {/* <div
-                className="bg-image hover-zoom"
-                style={{ maxWidth: "22rem" }}
-              > */}
+            <div className="card hover07">
               <a href={link} style={{ textDecoration: "none" }}>
                 <img
                   src={process.env.PUBLIC_URL + `/images/${image}`}
                   className="w-100"
                   alt="My project"
                 />
-                {/* <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(57, 192, 237, 0.2)" }}
-                  ></div> */}
-                {/* </div> */}
                 <div className="card-body">
                   <h5
                     style={{ color: "black" }}
