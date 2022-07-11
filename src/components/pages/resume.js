@@ -1,5 +1,6 @@
 import React from "react";
 import "../../font.css";
+import "../../style.css";
 
 export default function Resume() {
   return (
@@ -12,7 +13,8 @@ export default function Resume() {
           Download my{" "}
           <a
             href="https://docs.google.com/document/d/1HbqUh3fNE_RKKAWbepwbXtnnp9ohfmw3/edit?usp=sharing&ouid=105100305547412249524&rtpof=true&sd=true"
-            style={{ textDecoration: "none", color: "red" }}
+            style={{ textDecoration: "none" }}
+            className="resume"
           >
             resume
           </a>

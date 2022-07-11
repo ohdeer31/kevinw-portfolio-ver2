@@ -30,39 +30,6 @@
     fill: rgb(10, 88, 202);
   }
 
-  .mePicture figure img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .mePicture figure:hover img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  /* .mePicture figure img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .mePicture figure:hover img {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  } */
-
-  /* .hover07 a img {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .hover07 a:hover img {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  } */
-
   .hover07 a img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -83,4 +50,22 @@
   .hover07 a:hover img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+
+  .resume {
+    --b: 0.1em;
+    --c: black;
+    
+    color: red;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .resume:hover {
+    --_p: 100%;
+    --_s: .3s;
   }

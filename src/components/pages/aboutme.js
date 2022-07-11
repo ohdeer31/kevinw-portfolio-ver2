@@ -10,15 +10,13 @@ export default function About() {
         <h1 className="googleFont">About Me</h1>
       </header>
       <div>
-        <div className="mePicture">
-          <figure>
-            <img
-              src={profilePic}
-              alt="myself"
-              style={{ width: 150, height: 150 }}
-            ></img>
-          </figure>
-        </div>
+        <figure>
+          <img
+            src={profilePic}
+            alt="myself"
+            style={{ width: 150, height: 150 }}
+          ></img>
+        </figure>
         <p className="my-3">
           Greetings. My name is Kevin Wang and I graduated from the University
           of California, Riverside with a bachelor degree in Business Economics.
