@@ -33,6 +33,12 @@ const projects = [
     tools: "JavaScript",
     link: "https://ohdeer31.github.io/my-work-day-scheduler/",
   },
+  {
+    name: "Introductory Video For Speech Contest",
+    image: "picture6.jpeg",
+    tools: "Final Cut Pro",
+    link: "https://www.youtube.com/watch?v=n7lh-0hrCIs&t=14s",
+  },
 ];
 
 export default function Portfolio() {
